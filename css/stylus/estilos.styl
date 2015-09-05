@@ -1,6 +1,11 @@
 @import "nib"
 @import "normalize.styl"
 
+body
+	background-image url(../img/fibraf.jpg)
+	background-size cover
+	font-family: 'Exo', sans-serif;
+
 .headerCont
 	font-size 0
 	height 100vh
@@ -11,7 +16,7 @@
 	position relative
 	width 100vw
 	&-slide
-		animation deslizar-header 20s infinite
+		animation animacion 20s infinite
 		height 100vh
 		left 0
 		position absolute
@@ -26,11 +31,39 @@
 		position relative
 		width 100vw
 	&-span
+		// padding 0.3rem 1rem 0.3rem 0.5rem	
+		background rgba(0, 0, 0, .4)
+		border-radius:0, 1rem 1rem 0
+		border: 1px solid white
+		border-left none
+		color white
+		font-family 'Exo'
 		font-size 8vh
+		font-style italic
+		font-weight 100
+		left 0
 		left: 0
-		position: absolute
-		top 40vh
-				
+		padding 0.5rem 1rem
+		position absolute
+		top 40%
+
+	&-links
+		border 2px solid red
+		color red
+		font-size 1rem
+		height 50px
+		left 40%
+		margin 0
+		position absolute
+		top 80%
+		width 200px
+	&-links a
+		background: red
+		color: white;
+		padding 0 1.2rem 2rem 1rem
+		text-decoration none
+		width 100%
+
 .img-slider1
 	background-image url(../img/write.png)
 
@@ -46,12 +79,13 @@
 .img-slider5
 	background-image url(../img/angu.jpg)
 
+/*sildes cubo*/
 .contenedor
 	border 3px solid rgba(0, 0, 0, .75)
 	box-shadow 9px 9px 5px rgba(0, 0, 0, .75)
 	font-size: 0
 	height 400px
-	margin-top 1rem
+	margin-top 2rem
 	margin: 0 auto
 	max-height 400px
 	max-width 100vw
@@ -67,7 +101,7 @@
 		width 2000px
 	&-figure,
 	&-figure img
-		background-attachment fixed
+		// background-attachment fixed
 		background-position center
 		background-size cover 
 		display inline-block
@@ -78,7 +112,6 @@
 		width 400px
 	&-span
 		background rgba(0, 0, 0, .4)
-		border-left none
 		border-radius:0, 1rem 1rem 0
 		border: 1px solid white
 		border-left none
@@ -89,32 +122,8 @@
 		padding 0.5rem 1rem
 		position absolute
 		top 40%
-/*
-.uno
-	background-image url(../img/azul.jpg)
-.dos
-	background-image url(../img/css.jpg)
-.tres
-	background-image url(../img/javascript.jpg)
-.cuatro
-	background-image url(../img/retina.jpg)
-.cinco
-	background-image url(../img/angu.jpg)
-		
+
 /*animacion de sildes portada superior en stylus no se puede quitar en : y ; en los porcentajes*/ 
-@keyframes deslizar-header
-	0% {left: 0%;}
-	15% {left: 0%;}
-	20% {left: -100%;}
-	35% {left: -100%;}
-	40% {left: -200%;}
-	55% {left: -200%; }
-	60% {left: -300%; }
-	75% {left: -300%; }
-	80% {left: -400%; }
-	95% {left: -400%; }   
-	100% {left: 0; }
-
 
 @keyframes animacion
 	0% {left: 0%;}
@@ -128,64 +137,3 @@
 	80% {left: -400%; }
 	95% {left: -400%; }   
 	100% {left: 0; }
-
-
-
-/* 
-.contenedor
-	position relative
-	background rgba(0,0,0,0.1)
-	width 500px
-	height 500px
-	max-width 500px
-	max-height 500px
-	margin: 0 auto
-	font-size: 0
-	margin-top 1rem
-	overflow: hidden
-	&-silde
-		animation animacion 20s infinite
-		position absolute
-		top 0
-		left 0
-		width 2500px
-		height 500px
-	&-figure
-		position relative
-		display inline-block
-		margin 0
-		width 500px
-		max-width 500px
-		height 500px
-		background-attachment fixed
-		background-position center
-		background-size cover
-	&-span
-		color red
-		font-size 16px
-
-.uno
-	background-image url(../img/azul.jpg)
-.dos
-	background-image url(../img/css.jpg)
-.tres
-	background-image url(../img/javascript.jpg)
-.cuatro
-	background-image url(../img/retina.jpg)
-.cinco
-	background-image url(../img/angu.jpg)
-		
-animacion de sildes portada superior en stylus no se puede quitar en : y ; en los porcentajes 
-@keyframes animacion
-	0% {left: 0%;}
-	15% {left: 0%;}
-	20% {left: -100%;}
-	35% {left: -100%;}
-	40% {left: -200%;}
-	55% {left: -200%; }
-	60% {left: -300%; }
-	75% {left: -300%; }
-	80% {left: -400%; }
-	95% {left: -400%; }   
-	100% {left: 0; }
-*/
