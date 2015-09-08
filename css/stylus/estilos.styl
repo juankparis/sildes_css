@@ -1,5 +1,6 @@
 @import "nib"
 @import "normalize.styl"
+@import "fonts.styl"
 /*slider index.htlm*/
 body
 	background-image url(../img/fibraf.jpg)
@@ -48,21 +49,27 @@ body
 		top 40%
 
 	&-links
-		border 2px solid red
-		color red
-		font-size 1rem
+		bottom 0.5rem
+		font-size 2rem
 		height 50px
-		left 43vw
 		margin 0
-		position absolute
-		top 80%
 		max-width 200px
+		position absolute
+		right 0
 	&-links a
-		background: red
 		color: white;
 		padding 0 1.2rem 2rem 1rem
 		text-decoration none
 		width 100%
+	&-links_siguiente,
+	&-links_atras
+			bottom 0
+			font-size 1rem
+			position absolute
+			right 0.5rem
+	&-links_atras
+		right 6rem
+			
 
 .img-slider1
 	background-image url(../img/write.png)
